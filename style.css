@@ -1,16 +1,21 @@
-.part-1{
-    background-color: #fceae8;
-    border-radius: 7px;
+* {
+  margin: 0;
+  padding: 0;
 }
-.last-part{
-    background-color: #fceae8;
-    border-radius: 7px;
-    height: 300px;
+
+#logo {
+  height: 45px;
 }
-.sample img{
-    height: 100px;
+
+.last-part {
+  background-color: #fceae8;
+  border-radius: 7px;
+  height: 300px;
 }
-.item-card{
-    border: 0ch;
-    border-radius: 15px;
+.sample img {
+  height: 100px;
+}
+.item-card {
+  border: 0ch;
+  border-radius: 15px;
 }
