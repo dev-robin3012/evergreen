@@ -3,19 +3,90 @@
   padding: 0;
 }
 
+button {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* bootstrap modified start */
+.bg-primary {
+  background: #56b345 !important;
+}
+
+.btn-primary {
+  background: #56b345;
+  border: #56b345;
+  outline: #56b345;
+}
+
+.btn-primary:hover {
+  background: #62cc4f;
+  border: #62cc4f;
+}
+
+/* bootstrap modified end */
+
+.carousel_image {
+  height: 300px;
+  width: 100%;
+}
+
 #logo {
   height: 45px;
 }
-
-.last-part {
-  background-color: #fceae8;
-  border-radius: 7px;
-  height: 300px;
+.category {
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-.sample img {
+
+.category:hover {
+  background: #56b345;
+  color: #f8f9fa;
+}
+
+#fishes_block,
+#vegetables,
+#meat,
+#fruits {
+  padding-top: 80px;
+}
+
+#fishes_block > h1,
+#vegetables > h1,
+#meat > h1,
+#fruits > h1 {
+  position: relative;
+  z-index: 1;
+}
+#fishes_block > h1::after,
+#vegetables > h1::after,
+#meat > h1::after,
+#fruits > h1::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 5px;
+  height: 10px;
+  width: 160px;
+  background: #56b345;
+  z-index: -1;
+}
+
+.single_product .product_body {
+  margin-top: 10px;
   height: 100px;
 }
-.item-card {
-  border: 0ch;
-  border-radius: 15px;
+
+.single_product button {
+  width: 100%;
 }
