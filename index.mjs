@@ -13,7 +13,7 @@ function showProducts(parent, products) {
   parent.innerHTML = products
     .map(
       (product) => `
-        <div class="col-lg-3 col-md-4">
+        <div>
             <div class="single_product d-flex flex-column shadow">
                 <img src=${product.image} alt=${product.title} height="200px"  />
                 <div class="product_body px-3">
